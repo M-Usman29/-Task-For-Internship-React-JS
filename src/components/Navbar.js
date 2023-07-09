@@ -26,7 +26,7 @@ export default function Navbar(props) {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link className="nav-link text-white" to="#" style={{ marginLeft: '20px' }}>
+              <Link className="nav-link text-white" to="/" style={{ marginLeft: '20px' }}>
                 {props.home}
               </Link>
             </li>

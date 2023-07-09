@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
+import Home from './components/Home';
 import {
   BrowserRouter as Router,
   Routes,
@@ -16,7 +17,9 @@ function App() {
     <Router>
   
               <Navbar myname="USMAN"  home="Home" portfolio="Portfolio" contact="Contact"></Navbar>
+                
                   <Routes>
+                  <Route path="/" element={<Home />} />
                   <Route path="/Portfolio" element={<Portfolio ></Portfolio>}></Route>
                       <Route path="/Contact" element={<Contact ></Contact>}></Route>
  
