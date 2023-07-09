@@ -40,7 +40,7 @@ The technological revolution is changing aspects of our lives, and the fabric of
 <label htmlFor="message" className="form-label" style={{ color: 'white' }}>Message</label>
 <textarea className="form-control" id="message" rows="5" style={{ background: 'inherit', borderColor: 'lightgreen', color: 'white' }}></textarea>
 </div>
-<button type="submit" className="btn btn-outline-dark" style={{ background: 'linear-gradient(to right, #f83600 0%, #f9d423 100%)',marginBottom:'60px' }}>Submit</button>
+<button type="submit" className="btn btn-outline-dark" style={{ background: 'linear-gradient(to right, #f83600 0%, #f9d423 100%)',marginBottom:'60px' }}>Send to me</button>
 </form>
 </div>
 </div>

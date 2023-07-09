@@ -44,7 +44,7 @@ export default function Navbar(props) {
         </div>
         <div className="ml-auto" style={{ display: 'flex', alignItems: 'center' }}>
           <Link to="/Contact"
-            className="btn btn-outline-dark"
+           className="btn btn-outline-dark link-hover-effect"
             style={{
               background: 'linear-gradient(to right, #f83600 0%, #f9d423 100%)',
               fontSize: '20px',
