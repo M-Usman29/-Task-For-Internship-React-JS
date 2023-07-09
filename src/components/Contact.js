@@ -5,7 +5,7 @@ import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 export default function Contact() {
 return (
-<div className="container">
+<div className="container my-5" >
 <div className="contact-heading">
 <h2 className="contact-title">Contact Me</h2>
 </div>
@@ -40,7 +40,7 @@ The technological revolution is changing aspects of our lives, and the fabric of
 <label htmlFor="message" className="form-label" style={{ color: 'white' }}>Message</label>
 <textarea className="form-control" id="message" rows="5" style={{ background: 'inherit', borderColor: 'lightgreen', color: 'white' }}></textarea>
 </div>
-<button type="submit" className="btn btn-outline-dark" style={{ background: 'linear-gradient(to right, #f83600 0%, #f9d423 100%)' }}>Submit</button>
+<button type="submit" className="btn btn-outline-dark" style={{ background: 'linear-gradient(to right, #f83600 0%, #f9d423 100%)',marginBottom:'60px' }}>Submit</button>
 </form>
 </div>
 </div>

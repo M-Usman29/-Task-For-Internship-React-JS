@@ -1,7 +1,8 @@
 import './App.css';
-import Home from './components/Home';
+import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
+import Portfolio from './components/Portfolio';
 import {
   BrowserRouter as Router,
   Routes,
@@ -14,14 +15,14 @@ function App() {
   return (
     <Router>
   
-              <Home myname="USMAN"  home="Home" portfolio="Portfolio" contact="Contact"></Home>
+              <Navbar myname="USMAN"  home="Home" portfolio="Portfolio" contact="Contact"></Navbar>
                   <Routes>
-                        <Route path="/Home" element={<Home ></Home>}></Route>
-                        <Route path="/Contact" element={<Contact ></Contact>}></Route>
+                  <Route path="/Portfolio" element={<Portfolio ></Portfolio>}></Route>
+                      <Route path="/Contact" element={<Contact ></Contact>}></Route>
  
   
                    </Routes>
-              <Footer ftrname="USMAN"></Footer>
+              <Footer  ftrname="USMAN"></Footer>
     </Router>
   );
 }

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 
-export default function Home(props) {
+export default function Navbar(props) {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container" style={{ marginLeft: '30px', fontSize: '18px', height: '75px', display: 'flex', alignItems: 'center' }}>
@@ -43,14 +43,14 @@ export default function Home(props) {
           </ul>
         </div>
         <div className="ml-auto" style={{ display: 'flex', alignItems: 'center' }}>
-          <button
+          <Link to="/Contact"
             className="btn btn-outline-dark"
             style={{
               background: 'linear-gradient(to right, #f83600 0%, #f9d423 100%)',
               fontSize: '20px',
               color: 'black',
               borderRadius: '20px',
-              padding: '6px 24px', // Increased button length
+              padding: '6px 24px', 
               height: 'auto',
               display: 'flex',
               alignItems: 'center',
@@ -59,7 +59,7 @@ export default function Home(props) {
             }}
           >
             Contact
-          </button>
+          </Link>
           <FontAwesomeIcon icon={faGlobe} style={{ color: 'orange', transition: 'color 0.5s', fontSize: '24px' }} /> {/* Increased globe icon size */}
         </div>
       </div>

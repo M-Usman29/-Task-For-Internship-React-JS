@@ -1,10 +1,30 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faFacebook, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 export default function Footer(props) {
+  const [showFooter, setShowFooter] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isBottom =
+        window.innerHeight + window.pageYOffset >= document.body.offsetHeight;
+      const hasVerticalScrollbar =
+        document.documentElement.scrollHeight >
+        document.documentElement.clientHeight;
+      setShowFooter(isBottom || !hasVerticalScrollbar);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <footer className="bg-dark text-white fixed-bottom">
+    <footer
+      className={`bg-dark text-white fixed-bottom${showFooter ? '' : ' d-none'}`}
+    >
       <div className="container py-4 d-flex justify-content-between align-items-center">
         <div className="d-flex align-items-center">
           <img src="images/logo.png" alt="Logo" height="40" />
