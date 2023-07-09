@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 
@@ -6,10 +7,10 @@ export default function Home(props) {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container" style={{ marginLeft: '30px', fontSize: '18px', height: '75px', display: 'flex', alignItems: 'center' }}>
-        <a className="navbar-brand" href="/">
+        <Link className="navbar-brand" to="/">
           <img src="images/logo.png" alt="Logo" height="40" />
           <span style={{ marginLeft: '10px', color: 'white' }}>{props.myname}</span>
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -25,19 +26,19 @@ export default function Home(props) {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link text-white" href="#home" style={{ marginLeft: '20px' }}>
+              <Link className="nav-link text-white" to="#" style={{ marginLeft: '20px' }}>
                 {props.home}
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-white" href="#portfolio" style={{ marginLeft: '20px' }}>
+              <Link className="nav-link text-white" to="/Portfolio" style={{ marginLeft: '20px' }}>
                 {props.portfolio}
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-white" href="#contact" style={{ marginLeft: '20px' }}>
+              <Link className="nav-link text-white" to="/Contact" style={{ marginLeft: '20px' }}>
                 {props.contact}
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
