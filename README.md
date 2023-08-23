@@ -1,3 +1,10 @@
+
+![Capture1](https://github.com/M-Usman29/-Task-For-Internship-React-JS/assets/125122553/68f19508-b3da-4257-8ad8-cc2c3268f071)
+
+![Capture2](https://github.com/M-Usman29/-Task-For-Internship-React-JS/assets/125122553/15fe99c9-e2d6-4871-856b-5fe9e5dbee21)
+
+![Capture3](https://github.com/M-Usman29/-Task-For-Internship-React-JS/assets/125122553/b4bc2e02-f550-4c5f-bda5-9c4045dae8c0)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
